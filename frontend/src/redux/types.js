@@ -1,0 +1,10 @@
+export const ADD_TODO = 'ADD_TODO';
+export const DELETE_TODO = 'DELETE_TODO';
+export const IS_EDIT_TODO = 'IS_EDIT_TODO';
+export const EDIT_TODO = 'EDIT_TODO';
+export const COMPLETE_TODO = 'COMPLETE_TODO';
+export const FETCH_ALL_TODOS = 'FETCH_ALL_TODOS';
+export const SORT_DOWN = 'SORT_DOWN';
+export const SORT_UP = 'SORT_UP';
+export const FILTER_PRIORITY = 'FILTER_PRIORITY';
+export const SEARCH_TODO = 'SEARCH_TODO';
