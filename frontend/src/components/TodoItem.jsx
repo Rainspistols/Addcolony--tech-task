@@ -49,7 +49,6 @@ const TodoItem = ({ todo }) => {
                 onChange={(e) => setTitleValue(e.target.value)}
                 placeholder='value ...'
                 id='input1'
-                required
               />
             </label>
 

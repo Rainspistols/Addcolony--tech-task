@@ -41,9 +41,9 @@ export default function todoAppReducer(state = initialState, action) {
     case DELETE_TODO:
       return {
         ...state,
-        todos: [...state.todos.filter((todo) => todo.uuid != action.payload)],
+        todos: [...state.todos.filter((todo) => todo.uuid !== action.payload)],
         history: [
-          ...state.history.filter((todo) => todo.uuid != action.payload),
+          ...state.history.filter((todo) => todo.uuid !== action.payload),
         ],
       };
 
@@ -52,12 +52,12 @@ export default function todoAppReducer(state = initialState, action) {
         ...state,
         todos: [
           ...state.todos.map((todo) =>
-            todo.uuid == action.payload.uuid ? action.payload : todo
+            todo.uuid === action.payload.uuid ? action.payload : todo
           ),
         ],
         history: [
           ...state.todos.map((todo) =>
-            todo.uuid == action.payload.uuid ? action.payload : todo
+            todo.uuid === action.payload.uuid ? action.payload : todo
           ),
         ],
       };
